@@ -83,5 +83,11 @@
 			<artifactId>lombok</artifactId>
 			<version>1.16.18</version>
 		</dependency>
+		<!-- 8. AOP 설정 -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.8.10</version>
+		</dependency>
 	</dependencies>
 </project>

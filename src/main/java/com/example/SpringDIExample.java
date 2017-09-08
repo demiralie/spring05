@@ -19,10 +19,8 @@ public class SpringDIExample {
 		
 		CountryDao dao = ctx.getBean(CountryDao.class);
 		System.out.println(dao);
-		System.out.println(dao.getDs().getConnection());
-		
-		
-		
+		System.out.println(dao.selectAll());
+		System.out.println(dao.selectAll());
 		
 		ctx.close();
 	}
