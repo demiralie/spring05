@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
-
-	<!-- bean 설정 파일 -->
+	<!-- bean 자동등록 방법 -->
 	<context:annotation-config />
+	<context:component-scan base-package="com.example" />
 
-	<bean class="com.example.model.Dept">
-		<property name="deptno" value="20" />
-		<property name="dname" value="총무부" />
-		<property name="loc" value="부산" />
+	<!-- bean 설정 -->
+	<!--  DataSource -->
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/world" />
+		<property name="username" value="jspbook" />
+		<property name="password" value="1234" />
 	</bean>
 	
-	</beans>
+	<!-- bean java 파일 연동 설정 -->
+	<bean class="com.example.model.Dept">
+		<property name="deptno" value="50" />
+		<property name="dname" value="총무부" />
+		<property name="loc" value="광주" />
+	</bean>
+
+</beans>

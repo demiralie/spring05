@@ -13,18 +13,18 @@ object DeptExample {
 		log.info("##################")
 
 		var dept1: Dept = new Dept
-//		dept1.setDeptno(10)
-//
-//		var dept2: Dept = new Dept(20, "xxx", "yyy")
-//		dept2.setDeptno(30)
-//		dept2.setDname("개발부")
-//		dept2.setLoc("부산")
-//
-//		println(dept1)
-//		println(dept2)
-//
-//		println(dept1.getDeptno)
-//		println(dept2.getDname)
+		dept1.setDeptno(10)
+
+		var dept2: Dept = new Dept(20, "xxx", "yyy")
+		dept2.setDeptno(30)
+		dept2.setDname("개발부")
+		dept2.setLoc("부산")
+
+		println(dept1)
+		println(dept2)
+
+		println(dept1.getDeptno)
+		println(dept2.getDname)
 
 	}
 }
