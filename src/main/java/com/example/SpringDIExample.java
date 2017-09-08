@@ -4,6 +4,8 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 import com.example.model.Dept;
 
+
+
 public class SpringDIExample {
 
 	public static void main(String[] args) {

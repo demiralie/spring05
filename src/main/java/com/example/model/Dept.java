@@ -1,5 +1,6 @@
 package com.example.model;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,10 +10,7 @@ import lombok.ToString;
 @ToString
 @Getter
 @Setter
-//@AllArgsConstructor
-//@NoArgsConstructor
-//@AllArgsConstructor
-//@NoArgsConstructor
+@AllArgsConstructor
 public class Dept {
 
 	public static void main(String[] args) {
